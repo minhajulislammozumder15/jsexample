@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>javascript</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+  </head>
+  <body>
+
+
+
+
+    <div class="container">
+      <h2 class="text-danger">1. click the button to  change the text</h2>
+      <button class="btn btn-dark" onclick="textChange()"> Text Change</button>
+      <h3 id="t_c"> Lorem, ipsum,dolor. </h3>
+    </div>
+
+
+     <div class="container">
+      <h2 class="text-danger">2. click the button to  change the text</h2>
+      <button class="btn btn-dark" onclick="showDate()"> Text Change</button>
+      <h3 id="s_d"> Lorem, ipsum,dolor. </h3>
+    </div>
+
+
+    <div class="container">
+      <h2 class="text-danger">3. click the button to  change the text</h2>
+      <button class="btn btn-dark" onclick="canChange()"> Text Change</button>
+      <h3 id="c_x"> Lorem, ipsum,dolor. </h3>
+    </div>
+    <div class="container">
+      <h2 class="text-danger">4. click the button to  change the bulb</h2>
+      <button class="btn btn-dark" onclick="bulbOn()"> bulb</button>
+      <img id="bulb" src="image/on.gif" alt="">
+    </div>
+
+    <div class="container">
+      <h2 class="text-danger">5. click the button to  change the bulb</h2>
+      <button class="btn btn-dark" onclick="bulbOff()">bulb</button>
+      <img id="bulb" src="image/off.gif" alt="">
+    </div>
+
+
+     <div class="container">
+      <h2 class="text-danger">6. click the button to  change the color</h2>
+      <button class="btn btn-dark" onmousemove="colorChange()"> Text Change</button>
+      <h3 id="c_c"> Lorem, ipsum,dolor. </h3>
+    </div>
+
+    <div class="container">
+      <h2 class="text-danger">7. click the button to  change the color</h2>
+      <button class="btn btn-dark" onmouseleave="colorChange1()"> Text Change</button>
+      <h3 id="c_c1"> Lorem, ipsum,dolor. </h3>
+    </div>
+
+    <div class="container">
+      <h2 class="text-danger">8. click the button to  change the color</h2>
+      <button class="btn btn-dark" onmousewheel="colorChange2()"> Text Change</button>
+      <h3 id="c_c2"> Lorem, ipsum,dolor. </h3>
+    </div>
+
+    <div class="container">
+      <h2 class="text-danger">9. click the button to  show</h2>
+      <button class="btn btn-dark" onclick="textShow()"> Text Change</button>
+      <h3 id="demo"> Lorem, ipsum,dolor. </h3>
+    </div>
+     <div class="container">
+      <h2 class="text-danger">10. click the button to  show</h2>
+      <button class="btn btn-dark" onclick="textHide()"> Text Change</button>
+      <h3 id="demo"> Lorem, ipsum,dolor. </h3>
+    </div>
+
+
+     <div class="container">
+
+     <script>
+        document.write(5 + 6);
+     </script>
+     </div>
+
+
+
+
+    <div class="container">
+    <script>
+     window.alert(5 + 6);
+    </script>
+     </div>
+
+
+     <div class="container">
+      <h2 class="text-danger">13. click the button to  print</h2>
+      <button class="btn btn-dark" onclick="window.print()"> Text Change</button>
+      <h3 id="w_p"> Lorem, ipsum,dolor. </h3>
+    </div>
+
+    <div class="container">
+
+
+    <script>
+      let carName = "Volvo";
+       document.getElementById("demo").innerHTML = carName;
+    </script>
+
+    <h2> 15.JavaScript const</h2>
+
+      <p>Declaring a constant array does NOT make the elements unchangeable:</p>
+
+      <p id="demo1"></p>
+
+    <script>
+     // Create an Array:
+    const cars = ["Saab", "Volvo", "BMW"];
+    // Change an element:
+     cars[0] = "Toyota";
+
+    // Add an element:
+     cars.push("Audi");
+
+    // Display the Array:
+    document.getElementById("demo1").innerHTML = cars; 
+    </script>
+  </div>
+      <div class="container">
+        <h1> 16.JavaScript Variables</h1>
+
+        <p>In this example, x, y, and z are undeclared.</p>
+       <p>They are automatically declared when first used.</p>
+
+        <p id="demo5"></p>
+
+       <script>
+        x = 5;
+        y = 6;
+       z = x + y;
+       document.getElementById("demo5").innerHTML =
+       "The value of z is: " + z;
+       </script>
+    </div>
+    <div class="container">
+      <h1> 17.JavaScript Variables</h1>
+
+      <p>Create a variable, assign a value to it, and display it:</p>
+
+      <p id="demo6"></p>
+
+     <script>
+     let carName = "Volvo";
+     document.getElementById("demo6").innerHTML = carName;
+      </script>
+    </div>
+
+    <div class="container">
+      <h1> 18.JavaScript Variables</h1>
+
+         <p>You can declare many variables in one statement.</p>
+
+        <p id="vol"></p>
+
+       <script>
+        let person = "John Doe",
+        carName = "Volvo",
+        price = 200;
+      document.getElementById("vol").innerHTML = carName;
+      </script>
+
+
+      <h2> 19.Redeclaring a Variable Using var</h2>
+
+         <p id="d_d"></p>
+
+        <script>
+       var  x = 10;
+      // Here x is 10
+
+     {  
+      var x = 2;
+     // Here x is 2
+     }
+
+     // Here x is 2
+     document.getElementById("d_d").innerHTML = x;
+     </script>
+
+
+
+     <h2> 20.JavaScropt const variables has block scope</h2>
+
+       <p id="b_b"></p>
+ 
+      <script>
+       const  x = 10;
+       // Here x is 10
+
+      {  
+      const x = 2;
+     // Here x is 2
+      }
+
+     // Here x is 10
+     document.getElementById("b_b").innerHTML = "x is " + x;
+      </script>
+
+
+
+      <h1> 21.JavaScript String Operators</h1>
+
+        <p>All conditional operators can be used on both numbers and strings.</p>
+
+          <p id="bn_bn"></p>
+
+           <script>
+           let text1 = "A";
+           let text2 = "B";
+           let result = text1 < text2;
+           document.getElementById("bn_bn").innerHTML = "Is A less than B? " + result;
+           </script>
+
+           <h2> 22.JavaScript</h2>
+
+            <p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+
+            <p id="s_s"></p>
+
+          <script>
+          let x = 16 + "Volvo";
+          document.getElementById("s_s").innerHTML = x;
+        </script>
+
+        <h1> 23.JavaScript HTML Events</h1>
+        <h2>The onclick Attribute</h2>
+
+         <button class=" btn btn-dark" onclick="changeTime()">The time is?</button>
+         <h3 id="t_y">show date</h3>
+
+         <h1> 24.JavaScript HTML Events</h1>
+           <h2>The onclick Attribute</h2>
+
+          <button onclick="this.innerHTML=Date()">The time is?</button>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <script src="js/script.js"></script>
+     
+  </body>
+</html>
